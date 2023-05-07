@@ -11,7 +11,7 @@ for (holeIndex = 1; holeIndex < 10; holeIndex++) {
 	let hole = getHole(holeIndex);
 
 
-	hole.addEventListener('click', function() {
+	hole.onclick = function getMole() {
 
 		if (hole.classList.contains('hole_has-mole')) {
 			counterDead++;
@@ -32,6 +32,6 @@ for (holeIndex = 1; holeIndex < 10; holeIndex++) {
 		}
         dead.textContent = counterDead;
         lost.textContent = counterLost;
-	});
+	};
 
 }
