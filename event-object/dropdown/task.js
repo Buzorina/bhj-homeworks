@@ -11,7 +11,6 @@ dropdownItem.forEach(dropdownItem => {
 	dropdownItem.addEventListener('click', (event) => {
 		event.preventDefault();
 		let selectedItem = dropdownItem.querySelector('.dropdown__link').textContent;
-		console.log(selectedItem);
 		dropdown.textContent = selectedItem;
 		dropdownList.classList.remove('dropdown__list_active');
 	});
