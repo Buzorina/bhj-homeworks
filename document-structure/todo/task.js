@@ -6,7 +6,7 @@ const list = document.getElementById('tasks__list');
 
 add.addEventListener('click', (event) => {
 	event.preventDefault();
-	if (input.value != null) {
+	if (input.value.trim()) {
 		const item = document.createElement('div');
 		item.classList.add('task');
 		const title = document.createElement('div');
