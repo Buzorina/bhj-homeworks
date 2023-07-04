@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const fileToUpload = file.files[0]
 	const xhr = new XMLHttpRequest();
-	const formData = new FormData();
+	const formData = new FormData(form);
 
 	formData.append('uploadFile', fileToUpload);
 

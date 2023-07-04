@@ -28,4 +28,4 @@ fetch('https://students.netoservices.ru/nestjs-backend/poll')
 	.then(value => {
 		questions(value);
 		voteAccepted();
-	})
+	}).catch((err) => console.log('Fetch error: ', err));

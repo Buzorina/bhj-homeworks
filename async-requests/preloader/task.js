@@ -18,6 +18,6 @@ fetch('https://students.netoservices.ru/nestjs-backend/slow-get-courses')
 	.then(data => {
 		exchangeRates(data.response.Valute);
 		loader.classList.remove('loader_active');
-	})
+	}).catch((err) => console.log('Fetch error: ', err));
 
 	
